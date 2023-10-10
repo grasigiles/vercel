@@ -1,0 +1,20 @@
+{   
+
+  "redirects": [
+    {
+      "source": "/servicos/:path*",
+      "destination": "/analisedecoloracaopessoal.html"
+    }
+  ],
+  
+  "rewrites": [        
+    {
+      "source": "/analisedecoloracaopessoal",
+      "destination": "/analisedecoloracaopessoal.html"
+    },
+    {
+      "source": "/servicos",
+      "destination": "/analisedecoloracaopessoal.html"
+    }
+  ]
+}

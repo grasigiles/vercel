@@ -1,17 +1,583 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html dir="ltr" lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Grasi Personal Stylist</title>
+    <meta name="description" content="Não sabe por onde começar a mudar? Eu te ajudo! Juntas vamos descobrir qual é o seu estilo e as cores que te favorecem. Você vai aprender a criar novos looks.">
+    <meta name="keywords" content="personal stylist, stylist, moda, analise de coloração pessoal, estilo, fashion, consultoria de imagem, dicas de moda, como combinar roupas, como vestir, o que vestir">
+    <meta name="robots" content="index,follow">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:description" content="Não sabe por onde começar a mudar? Eu te ajudo! Juntas vamos descobrir qual é o seu estilo e as cores que te favorecem. Você vai aprender a criar novos looks.">
+    <meta name="twitter:image" content="https://www.grasipersonalstylist.com.br/images/t-grasi-personal-stylist.jpg">
+    <meta name="twitter:site" content="Grasi Personal Stylist">
+    <meta name="twitter:title" content="Grasi Personal Stylist">
+    <meta property="fb:app_id" content="" />
+    <meta property="og:description" content="Não sabe por onde começar a mudar? Eu te ajudo! Juntas vamos descobrir qual é o seu estilo e as cores que te favorecem. Você vai aprender a criar novos looks.">
+    <meta property="og:image" content="https://www.grasipersonalstylist.com.br/images/grasi-personal-stylist.jpg">
+    <meta property="og:image:type" content="image/jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="627">
+    <meta property="og:site_name" content="Grasi Personal Stylist">
+    <meta property="og:title" content="Grasi Personal Stylist">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="https://www.grasipersonalstylist.com.br">
+    <link rel="author" href="https://www.instagram.com/grasipersonalstylist/">
+    <link rel="canonical" href="https://www.grasipersonalstylist.com.br/">
+    <link rel="icon" href="" type="image/x-icon">
+
+    <!-- Event snippet for Botão Instagram conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>function gtag_report_conversion(url) { var callback = function () { if (typeof (url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-961659884/4RCYCN-g6IEDEOyHx8oD', 'event_callback': callback }); return false; }</script>
+
+    <!-- Event snippet for Botão WhatsApp conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>function gtag_report_conversion(url) { var callback = function () { if (typeof (url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-961659884/EOOmCNGm7IEDEOyHx8oD', 'event_callback': callback }); return false; }</script>
+
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Poppins:300,400,500,600,700|PT+Serif:400,400i&display=swap" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+    <link rel="stylesheet" href="css/custom.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="Custom/photographer/photographer.css" rel="stylesheet" />
+
+
+    <!-- Document Title
+    ============================================= -->
+    <title></title>
+
+    <style>
+
+        .revo-slider-emphasis-text {
+            font-size: 58px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            font-family: 'Poppins', sans-serif;
+            padding: 15px 20px;
+            border-top: 2px solid #FFF;
+            border-bottom: 2px solid #FFF;
+        }
+
+        .revo-slider-desc-text {
+            font-size: 20px;
+            font-family: 'Lato', sans-serif;
+            width: 650px;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .revo-slider-caps-text {
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 3px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .tp-video-play-button {
+            display: none !important;
+        }
+
+        .tp-caption {
+            white-space: nowrap;
+        }
+
+        .analise {
+            font-size: 50px;
+        }
+    </style>
+
 </head>
 
-<body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
-</body>
+<body class="stretched">
 
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+        <!-- Header
+        ============================================= -->
+        <header id="header" data-mobile-sticky="true">
+            <div id="header-wrap">
+                <div class="container">
+                    <div class="header-row">
+
+                        <!-- Logo
+                ============================================= -->
+                        <div id="logo">
+                            <a href="" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo.png" alt="Grasi Personal Stylist"></a>
+                            <a href="" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="images/logo@2x.png" alt="Grasi Personal Stylist"></a>
+                        </div><!-- #logo end -->
+
+                        <div class="header-misc">
+
+                            <div class="header-misc-icon">
+                                <a onclick="return gtag_report_conversion('https://www.instagram.com/grasipersonalstylist/')" href="https://www.instagram.com/grasipersonalstylist/" target="_blank" class="social-icon si-colored si-small si-instagram" style="font-size: 1.50rem;">
+                                    <i class="icon-instagram"></i>
+                                    <i class="icon-instagram"></i>
+                                </a>
+                            </div>
+
+                            <div class="header-misc-icon">
+                                <a onclick="return gtag_report_conversion('https://api.whatsapp.com/send?phone=5511980301527');" href="https://api.whatsapp.com/send?phone=5511980301527" target="_blank" class="social-icon si-colored si-small si-whatsapp" style="font-size: 1.50rem;">
+                                    <i class="icon-whatsapp"></i>
+                                    <i class="icon-whatsapp"></i>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div id="primary-menu-trigger">
+                            <svg class="svg-trigger" style="width: 45px; height: 45px;" viewBox="0 0 100 100"><path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path><path d="m 30,50 h 40"></path><path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path></svg>
+                        </div>
+
+                        <!-- Primary Navigation
+                ============================================= -->
+                        <nav class="primary-menu">
+
+                            <ul class="menu-container">
+                                <li id="menu-home" class="menu-item"><a class="menu-link" href=""><div>Home</div><span></span></a></li>
+                                <li id="menu-servicos" class="menu-item">
+                                    <a class="menu-link" href="#"><div>Serviços</div></a>
+                                    <ul class="sub-menu-container">
+                                        <li class="menu-item"><a class="menu-link" href="/servicos/analisedecoloracaopessoal"><div>Análise de Coloração Pessoal</div></a></li>
+                                        <li class="menu-item"><a class="menu-link" href="/servicos/analisedeguardaroupa"><div>Análise de Guarda-Roupa</div></a></li>
+                                        <li class="menu-item"><a class="menu-link" href="/servicos/criacaodelooks"><div>Criação de Looks</div></a></li>
+                                        <li class="menu-item"><a class="menu-link" href="/servicos/personalshopper"><div>Personal Shopper</div></a></li>
+                                        <li class="menu-item"><a class="menu-link" href="/servicos/analisedeestilo"><div>Análise de Estilo</div></a></li>
+                                        <li class="menu-item"><a class="menu-link" href="/servicos/consultoriacompletadeestilo"><div>Consultoria Completa de Estilo</div></a></li>
+                                        <li class="menu-item"><a class="menu-link" href="/servicos/fastconsultoria"><div>Fast Consultoria</div></a></li>
+                                    </ul>
+                                </li>
+                                <li id="menu-consultoria-completa" class="menu-item"><a class="menu-link" href="/servicos/consultoriacompletadeestilo"><div>Consultoria Completa de Estilo</div></a></li>
+                                <li id="menu-palestras" class="menu-item"><a class="menu-link" href="/agenda"><div>Agenda</div></a></li>
+                                <li id="menu-sobre" class="menu-item"><a class="menu-link" href="/sobre"><div>Minha História</div></a></li>
+                                <li id="menu-contato" class="menu-item"><a class="menu-link" href="/contato"><div>Contato</div></a></li>
+
+                            </ul>
+
+                        </nav><!-- #primary-menu end -->
+
+                        <form class="top-search-form" action="search.html" method="get">
+                            <input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter.." autocomplete="off">
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <div class="header-wrap-clone"></div>
+        </header><!-- #header end -->
+
+        <!-- Slider
+        ============================================= -->
+<section id="slider" class="slider-element min-vh-60 min-vh-md-100 include-header" style="background: url('custom/photographer/images/dots-1.png') 100% 0 no-repeat; background-size: 60% auto">
+  <div class="slider-inner">
+
+      <div class="vertical-middle">
+          <div class="container parallax py-5" data-0="opacity: 1; overflow: visible; margin-top:0px" data-top-bottom="opacity: 0; overflow: visible; margin-top:100px">
+
+              <div class="row align-items-center col-mb-50" style="margin-bottom: -80px;">
+                  <div class="col-md-6">
+                      <div class="py-5 py-md-0">
+                          <small class="text-muted text-uppercase font-weight-light ls4 mb-1 d-block">Grasi Personal Stylist</small>
+                          <h2 class="text-dark">Sua imagem comunica</h2>
+                          <h5 class="font-weight-light ls1" style="opacity: .7">Aprenda a usar melhor suas roupas e acessórios de acordo com o seu estilo.</h5>
+                          <div class="d-flex align-items-center mt-5">
+                              <a href="https://www.instagram.com/grasipersonalstylist/" class="button button-change button-rounded overflow-hidden nott button-large font-weight-normal mx-0 px-4">
+                                  <span>
+                                      <i class="icon-instagram"></i>
+                                      Instagram
+                                  </span>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+
+
+          </div>
+      </div>
+
+  </div>
+</section><!-- #Slider End -->
+<!-- Page Title
+      ============================================= -->
+<!--<section id="page-title" class="page-title-parallax page-title-dark" style="background-image: url('/images/servicos/grasi-personal-stylist-home.jpg'); background-size: cover; padding: 120px 0;" data-bottom-top="background-position:0px 0px;" data-top-bottom="background-position:0px -300px;">
+
+  <div class="container clearfix">
+      <h1 style="background-color: #000;
+      display: inline;
+      opacity: 0.6;">
+          Grasi Personal Stylist
+      </h1>
+      <span style="color:darkolivegreen;font-weight:bold">A moda muda. O estilo permanece. By Coco Channel</span>
+  </div>
+
+</section>-->
+<!-- #page-title end -->
+<!-- Content
+============================================= -->
+<section id="content">
+
+  <div class="content-wrap" style="padding: 0px; padding-top: 0px;">
+      <div class="container clearfix">
+
+          <div class="fancy-title title-border title-center mb-4">
+              <h4>SERVIÇOS</h4>
+          </div>
+
+          <div class="row col-mb-50">
+              <div class="col-md-4">
+                  <div class="feature-box media-box">
+                      <div class="fbox-media">
+                          <a href="/servicos/analisedecoloracaopessoal">
+                              <img src="images/servicos/analise-de-coloracao-pessoal.jpg" alt="Análise de Coloração Pessoal">
+                          </a>
+                      </div>
+                      <div class="fbox-content px-0">
+                          <a href="/servicos/analisedecoloracaopessoal">
+                              <h3>Análise de Coloração Pessoal<span class="subtitle">Descubra suas cores e valorize sua beleza natural</span></h3>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-md-4">
+                  <div class="feature-box media-box flex-column">
+                      <div class="fbox-media">
+                          <a href="/servicos/analisedeguardaroupa">
+                              <img src="images/servicos/analise-de-guarda-roupas.jpg" alt="Análise de Guarda-Roupa">
+                          </a>
+                      </div>
+                      <div class="fbox-content px-0">
+                          <a href="/servicos/analisedeguardaroupa">
+                              <h3>Análise de Guarda-Roupa<span class="subtitle">Um tour pelo seu guarda-roupa onde vamos analisar peça por peça e ver o que realmente funciona, e também identificar o que está faltando</span></h3>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-md-4">
+                  <div class="feature-box media-box flex-column">
+                      <div class="fbox-media">
+                          <a href="/servicos/criacaodelooks">
+                              <img src="images/servicos/criacao-de-looks.jpg" alt="Criação de Looks">
+                          </a>
+                      </div>
+                      <div class="fbox-content px-0">
+                          <a href="/servicos/criacaodelooks">
+                              <h3>Criação de Looks<span class="subtitle">A hora da multiplicação. Vamos criar vários looks para várias ocasiões e praticar os truques de estilo que fazem toda a diferença no resultado final</span></h3>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-md-4">
+                  <div class="feature-box media-box flex-column">
+                      <div class="fbox-media">
+                          <a href="/servicos/personalshopper">
+                              <img src="images/servicos/personal-shopper.jpg" alt="Personal Shopper">
+                          </a>
+                      </div>
+                      <div class="fbox-content px-0">
+                          <a href="/servicos/personalshopper">
+                              <h3>Personal Shopper<span class="subtitle">A aventura das compras! Um novo olhar para as lojas e uma experiência cheia de aprendizados</span></h3>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-md-4">
+                  <div class="feature-box media-box flex-column">
+                      <div class="fbox-media">
+                          <a href="/servicos/fastconsultoria">
+                              <img src="images/servicos/fast-consultoria.jpg" alt="Consultoria de Imagem Rápida">
+                          </a>
+                      </div>
+                      <div class="fbox-content px-0">
+                          <a href="/servicos/fastconsultoria">
+                              <h3>Fast Consultoria<span class="subtitle">Não sabe por onde começar a mudar? Eu te ajudo! Café com muito bate-papo e um dossiê personalizado com direcionamentos para o começo de uma mudança na sua imagem</span></h3>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-md-4">
+                  <div class="feature-box media-box flex-column">
+                      <div class="fbox-media">
+                          <a href="/servicos/consultoriacompletadeestilo">
+                              <img src="images/servicos/consultoria-completa-de-estilo.jpg" alt="Consultoria Completa de Estilo">
+                          </a>
+                      </div>
+                      <div class="fbox-content px-0">
+                          <a href="/servicos/consultoriacompletadeestilo">
+                              <h3>Consultoria Completa de Estilo<span class="subtitle">Sua imagem tem muito valor, e buscar o autoconhecimento exige uma pausa e atenção a si mesma. Essa jornada será uma virada de página na sua vida</span></h3>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+
+          <div class="clear"></div>
+
+
+
+          <div class="line"></div>
+
+          <h3>Depoimentos</h3>
+
+          <ul class="testimonials-grid grid-1 grid-md-2">
+              <li class="grid-item">
+                  <div class="testimonial">
+                      <div class="testi-image">
+                          <a href="https://www.instagram.com/sandraccezario/" target="_blank"><img src="images/testimonials/sandra-cezario.jpg" alt="Análise de Coloração - Depoimento"></a>
+                      </div>
+                      <div class="testi-content">
+                          <p>A minha experiência com a Grazi foi única e jamais terei palavras para explicar o quanto ela transformou minha vida com seu trabalho maravilhoso de Personal Stylist. Aprendi como ser eu mesma com meu estilo próprio e único com as orientações dela. Só estando com ela é que você vai saber e sentir o que eu vivi. Gratidão eterna.</p>
+                          <div class="testi-meta">
+                              Sandra Cezario, Personal Organizer
+                              <span><a href="https://www.instagram.com/sandraccezario/" target="_blank">@@sandraccezario</a></span>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+              <li class="grid-item">
+                  <div class="testimonial">
+                      <div class="testi-image">
+                          <a href="https://www.instagram.com/dra.ingridcruz/" target="_blank"><img src="images/testimonials/ingrid-cruz.jpg" alt="Análise de Coloração - Depoimento"></a>
+                      </div>
+                      <div class="testi-content">
+                          <p>A baixa autoestima tomou conta dos meus dias, mas depois dessa experiência eu pude enxergar a mulher que estava dentro de mim e me amar.</p>
+                          <div class="testi-meta">
+                              Ingrid Cruz, Dentista
+                              <span><a href="https://www.instagram.com/dra.ingridcruz/" target="_blank">@@dra.ingridcruz</a></span>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+              <li class="grid-item">
+                  <div class="testimonial">
+                      <div class="testi-image">
+                          <a href="https://www.instagram.com/giseleaguiar_tp/" target="_blank"><img src="images/testimonials/gislaine-aguiar.jpg" alt="Análise de Coloração - Depoimento"></a>
+                      </div>
+                      <div class="testi-content">
+                          <p>Agora penso: Porque demorei tanto para fazer isso por mim. Obrigada do fundo do meu coração</p>
+                          <div class="testi-meta">
+                              Gisele Aguiar, Publicitária
+                              <span><a href="https://www.instagram.com/giseleaguiar_tp/" target="_blank">@@giseleaguiar_tp</a></span>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+              <li class="grid-item">
+                  <div class="testimonial">
+                      <div class="testi-image">
+                          <a href="https://www.instagram.com/rutenasc/" target="_blank"><img src="images/testimonials/rute-nascimento.jpg" alt="Personal Shopper - Depoimento"></a>
+                      </div>
+                      <div class="testi-content">
+                          <p>Me sinto uma borboleta saindo do meu casulo. Muita gratidão pela sua vida.</p>
+                          <div class="testi-meta">
+                              Rute Nascimento, Empreendedora
+                              <span><a href="https://www.instagram.com/rutenasc/" target="_blank">@@rutenasc</a></span>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+          </ul>
+
+
+
+      </div>
+
+      <div class="line"></div>
+
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="row align-items-stretch align-items-center">
+                      <div class="col-md-7 min-vh-50" style="background: url('images/servicos/consultoria-completa-de-estilo-promo.jpg') center center no-repeat; background-size: cover;">
+                          <div class="vertical-middle pl-3">
+                              <h2 class="pl-1">Faça uma <br> Consultoria <br>Completa <br>de Estilo</h2>
+
+                          </div>
+                      </div>
+                      <div class="col-md-5 bg-white">
+                          <div class="card border-0 py-2">
+                              <div class="card-body">
+                                  <h3 class="card-title mb-4 ls0">O que você vai aprender com a consultoria completa.</h3>
+                                  <ul class="iconlist ml-3">
+                                      <li><i class="icon-circle-blank text-black-50"></i> Usar sua paleta de cores</li>
+                                      <li><i class="icon-circle-blank text-black-50"></i> Economizar dinheiro e tempo em compras</li>
+                                      <li><i class="icon-circle-blank text-black-50"></i> Deixar o seu guarda-roupa com peças que você vai usar </li>
+                                      <li><i class="icon-circle-blank text-black-50"></i> Criar novos looks com as roupas que você já tem </li>
+                                      <li><i class="icon-circle-blank text-black-50"></i> Saber adquirir novas peças que fazem sentido com o seu estilo </li>
+                                  </ul>
+                                  <a href="/servicos/consultoriacompletadeestilo" class="button button-rounded ls0 font-weight-semibold ml-0 mb-2 nott px-4">Mais informações</a><br>
+                                  <small class="font-italic text-black-50">Invista em você.</small>
+                              </div>
+                          </div>
+                      </div> 
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="line"></div>
+
+
+  </div>
+</section><!-- #content end -->
+
+        <!-- Footer
+        ============================================= -->
+        <footer id="footer" class="dark" style="background: url('images/footer-bg.jpg') repeat; background-size: cover;">
+            <div class="container">
+                <!-- Footer Widgets
+                ============================================= -->
+                <div class="footer-widgets-wrap">
+
+                    <div class="row col-mb-50">
+                        <div class="col-md-8">
+                            <div class="widget clearfix">
+
+                                <img src="images/footer-logo.png" alt="Grasi Personal Stylist" class="alignleft" style="margin-top: 8px; padding-right: 10px; border-right: 1px solid #4A4A4A;">
+
+                                <p>Personal Stylist</p>
+
+                                <div class="line" style="margin: 30px 0;"></div>
+
+                                <div class="row col-mb-30">
+                                    <div class="col-6 col-lg-4 widget_links">
+                                        <ul>
+                                            <li><a href="">Home</a></li>
+                                            <li><a href="/servicos/analisedecoloracaopessoal">Análise de Coloração Pessoal</a></li>
+                                            <li><a href="/servicos/analisedeguardaroupa">Análise de Guarda-Roupa</a></li>
+                                            <li><a href="/servicos/criacaodelooks">Criação de Looks</a></li>
+
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-6 col-lg-4 widget_links">
+                                        <ul>
+                                            <li><a href="/servicos/personalshopper">Personal Shopper</a></li>
+                                            <li><a href="/servicos/analisedeestilo">Análise de Estilo</a></li>
+                                            <li><a href="/servicos/fastconsultoria">Fast Consultoria</a></li>
+                                            <li><a href="/servicos/consultoriacompletadeestilo">Consultoria Completa de Estilo</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-6 col-lg-4 widget_links">
+                                        <ul>
+                                            <li><a href="/sobre">Minha história</a></li>
+                                            <li><a href="/contato">Contato</a></li>
+                                        </ul>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-3 col-lg-12">
+                                <div class="widget clearfix" style="margin-bottom: -20px; margin-top: 25px;">
+
+                                    <div class="row">
+                                        <div class="col-12 col-md-12 col-lg-6 clearfix bottommargin-sm">
+                                            <a onclick="return gtag_report_conversion('https://api.whatsapp.com/send?phone=5511980301527');" href="https://api.whatsapp.com/send?phone=5511980301527" target="_blank" class="social-icon si-dark si-colored si-whatsapp mb-0" style="margin-right: 10px; font-size: 1.60rem;">
+                                                <i class="icon-whatsapp"></i>
+                                                <i class="icon-whatsapp"></i>
+                                            </a>
+                                            <a onclick="return gtag_report_conversion('https://api.whatsapp.com/send?phone=5511980301527');" href="https://api.whatsapp.com/send?phone=5511980301527" target="_blank"><small style="display: block; margin-top: 3px;"><strong>11 98030-1527</strong><br>Envie uma mensagem</small></a>
+                                        </div>
+                                        <div class="col-12 col-md-12 col-lg-6 clearfix">
+                                            <a onclick="return gtag_report_conversion('https://www.instagram.com/grasipersonalstylist/')" href="https://www.instagram.com/grasipersonalstylist/" target="_blank" class="social-icon si-dark si-colored si-instagram mb-0" style="margin-right: 10px; font-size: 1.60rem;">
+                                                <i class="icon-instagram"></i>
+                                                <i class="icon-instagram"></i>
+                                            </a>
+                                            <a onclick="return gtag_report_conversion('https://www.instagram.com/grasipersonalstylist/')" href="https://www.instagram.com/grasipersonalstylist/" target="_blank"><small style="display: block; margin-top: 3px;"><strong>@@grasipersonalstylist</strong><br>Me chama no Direct</small></a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="widget clearfix">
+                                <h4>Instagram</h4>
+                                <div class="masonry-thumbs grid-container grid-3 customjs">
+                                    <a class="grid-item" href="https://www.instagram.com/grasipersonalstylist/" target="_blank"><img src="images/instagram/grasi0.jpg" alt="Image"></a>
+                                    <a class="grid-item" href="https://www.instagram.com/grasipersonalstylist/" target="_blank"><img src="images/instagram/grasi1.jpg" alt="Image"></a>
+                                    <a class="grid-item" href="https://www.instagram.com/grasipersonalstylist/" target="_blank"><img src="images/instagram/grasi2.jpg" alt="Image"></a>
+                                    <a class="grid-item" href="https://www.instagram.com/grasipersonalstylist/" target="_blank"><img src="images/instagram/grasi3.jpg" alt="Image"></a>
+                                    <a class="grid-item" href="https://www.instagram.com/grasipersonalstylist/" target="_blank"><img src="images/instagram/grasi4.jpg" alt="Image"></a>
+                                    <a class="grid-item" href="https://www.instagram.com/grasipersonalstylist/" target="_blank"><img src="images/instagram/grasi5.jpg" alt="Image"></a>
+                                    <a class="grid-item" href="https://www.instagram.com/grasipersonalstylist/" target="_blank"><img src="images/instagram/grasi6.jpg" alt="Image"></a>
+                                    <a class="grid-item" href="https://www.instagram.com/grasipersonalstylist/" target="_blank"><img src="images/instagram/grasi7.jpg" alt="Image"></a>
+                                    <a class="grid-item" href="https://www.instagram.com/grasipersonalstylist/" target="_blank"><img src="images/instagram/grasi8.jpg" alt="Image"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div><!-- .footer-widgets-wrap end -->
+            </div>
+
+            <!-- Copyrights
+            ============================================= -->
+            <div id="copyrights">
+                <div class="container">
+
+                    <div class="row justify-content-between col-mb-30">
+                        <div class="col-12 col-lg-auto text-center text-lg-left">
+                            <div class="copyrights-menu copyright-links clearfix">
+                                <a href="">Home</a>/<a href="/servicos/analisedecoloracaopessoal">Análise de Coloração Pessoal</a>/<a href="/servicos/consultoriacompletadeestilo">Consultoria Completa de Estilo</a>/<a href="/Sobre">Minha história</a>/<a href="/Contato">Contato</a>
+                            </div>
+                            Copyrights &copy; 2020 All Rights Reserved by Grasi Personal Stylist.
+                        </div>
+
+                        <div class="col-12 col-lg-auto text-center text-lg-right">
+                            <a onclick="return gtag_report_conversion('https://www.instagram.com/grasipersonalstylist/')" href="https://www.instagram.com/grasipersonalstylist/" target="_blank" class="social-icon inline-block si-small si-borderless mb-0 si-instagram">
+                                <i class="icon-instagram"></i>
+                                <i class="icon-instagram"></i>
+                            </a>
+                            <a onclick="return gtag_report_conversion('https://api.whatsapp.com/send?phone=5511980301527');" href="https://api.whatsapp.com/send?phone=5511980301527" target="_blank" class="social-icon inline-block si-small si-borderless mb-0 si-whatsapp">
+                                <i class="icon-whatsapp"></i>
+                                <i class="icon-whatsapp"></i>
+                            </a>
+                            <a href="https://www.facebook.com/grasipersonalstylist/" target="_blank" class="social-icon inline-block si-small si-borderless mb-0 si-facebook">
+                                <i class="icon-facebook"></i>
+                                <i class="icon-facebook"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div><!-- #copyrights end -->
+        </footer><!-- #footer end -->
+    </div><!-- #wrapper end -->
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- JavaScripts
+    ============================================= -->
+    <script src="js/jquery.js"></script>
+    <script src="js/plugins.min.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="js/functions.js"></script>
+    <script src="js/views/MenuCurrent.js"></script>
+    @RenderSection("Js", false)
+</body>
 </html>

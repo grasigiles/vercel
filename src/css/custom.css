@@ -1,0 +1,48 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Handling Updates
+-----------------------------------------------------------------*/
+.feature-text {
+	display: flex;
+	align-items: center;
+	border-bottom: 1px dashed rgba(0, 0, 0, 0.15);
+	padding-bottom: 10px;
+}
+.fbox-text {
+	font-size: 58px;
+	line-height: 1;
+	font-weight: 700;
+}
+.feature-text h3 {
+	font-size: 22px;
+	line-height: 1.3;
+	margin-bottom: 0;
+	margin-left: 15px;
+	font-weight: 800;
+}
+.feature-text + p {
+	color: #777;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+.product .product-title h3 {
+	font-size: 14px;
+	letter-spacing: -1px;
+	line-height: 1.3;
+	font-weight: 500;
+	letter-spacing: 0;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	text-transform: capitalize;
+	white-space: normal;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.product-price {
+	font-size: 14px;
+	font-weight: 500;
+}
